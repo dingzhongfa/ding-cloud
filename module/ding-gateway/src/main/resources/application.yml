@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ding-gateway
+server:
+  port: 8000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+#security:
+#  user:
+#    name: registry
+#    password: 123456
+#  basic:
+#    enabled: true

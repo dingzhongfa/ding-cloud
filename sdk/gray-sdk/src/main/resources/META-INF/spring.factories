@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ding.cloud.gray.support.RibbonDiscoveryRuleAutoConfiguration,\
+com.ding.cloud.gray.filter.RibbonFilterConfiguration,\
+com.ding.cloud.gray.feign.FeignSupportConfiguration

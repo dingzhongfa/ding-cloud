@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ding-registery
+server:
+  port: 8761
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 5000
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+security:
+  user:
+    name: registry
+    password: 123456
+  basic:
+    enabled: true
