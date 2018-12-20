@@ -18,7 +18,6 @@ package com.ding.cloud.gray.predicate;
 import com.netflix.loadbalancer.AbstractServerPredicate;
 import com.netflix.loadbalancer.PredicateKey;
 import com.netflix.niws.loadbalancer.DiscoveryEnabledServer;
-import com.sun.istack.internal.Nullable;
 
 
 /**
@@ -33,7 +32,7 @@ public abstract class DiscoveryEnabledPredicate extends AbstractServerPredicate 
      * {@inheritDoc}
      */
     @Override
-    public boolean apply(@Nullable PredicateKey input) {
+    public boolean apply( PredicateKey input) {
         return input != null
                 && input.getServer() instanceof DiscoveryEnabledServer
                 && apply((DiscoveryEnabledServer) input.getServer());
