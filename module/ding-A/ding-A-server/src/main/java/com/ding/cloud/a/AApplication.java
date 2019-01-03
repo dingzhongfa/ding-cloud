@@ -5,6 +5,7 @@ import com.ding.cloud.b.client.BClient;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * <p>
@@ -17,6 +18,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringCloudApplication
 @EnableFeignClients(basePackageClasses = {AClient.class, BClient.class})
+@EnableTransactionManagement
 public class AApplication {
 
     public static void main(String[] args) {
