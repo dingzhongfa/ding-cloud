@@ -4,7 +4,7 @@ import com.ding.cloud.a.client.AClient;
 import com.ding.cloud.b.client.BClient;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * <p>
