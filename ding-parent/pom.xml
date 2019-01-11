@@ -26,6 +26,7 @@
         <module>../module/ding-A-2</module>
         <module>../module/ding-B-2</module>
         <module>../module/ding-gateway</module>
+        <module>../module/ding-gateway-2.0</module>
         <module>../module/ding-registry</module>
         <module>../sdk/gray-sdk</module>
     </modules>
